@@ -5,6 +5,8 @@ const log = console.log;
   2. 레이블
   두 군데에서 사용된다.
  */
+const bar = () => {};
+
 let a = {
   foo: bar()
 }
