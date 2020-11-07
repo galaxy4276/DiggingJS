@@ -14,3 +14,5 @@ log(!~a.indexOf('ol'));
 if (!~a.indexOf('ol')) {
   log('ol 못찾았다~');
 }
+
+// ~~는 Math.floor 값과 유사하나 생각할 지 모르나, 음수에서 결과값이 다르다는 점을 유의하자

@@ -46,3 +46,4 @@ Number.prototype.valueOf = function() {
 };
 
 log(new Number(2) == 3); //true
+
