@@ -3,3 +3,5 @@ const log = console.log;
 let a = new String('Hello world!');
 log(`a type: ${typeof a}`); // object
 log(a instanceof String); // true 
+// 문자열을 감싸는 문자열 래퍼를 생성하기 때문이란다.
+
