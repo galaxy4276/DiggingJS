@@ -16,5 +16,7 @@
 
 ## Core JavaScript
 
+![bookPreview](./img/core.js.png)
+
 - 나의 두번 째 자바스크립트 책
 - 같은 내용이 나올지라도 꾸준히 읽어야 는다. - 내피셜
