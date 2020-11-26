@@ -1,0 +1,9 @@
+html
+  meta(charset="utf8")
+  title yts Movie
+body
+  h1= movie.title
+  p= movie.summary
+  ul
+    each genre in movie.genres
+      li= genre
