@@ -9,9 +9,10 @@
     "@babel/preset-env": "^7.12.7",
     "axios": "^0.21.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "pug": "^3.0.0"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node ./"
+    "start": "nodemon --exec babel-node ./src"
   }
 }

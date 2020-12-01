@@ -1,5 +1,5 @@
 import express from "express";
-import { home, movieDetail } from "./movieController";
+import { getAddMovie, home, movieDetail, postAddMovie } from "./movieController";
 
 const movieRouter = express.Router();
 
@@ -9,6 +9,8 @@ Here add a way to handle GET and POST requests to the "/add" URL
 Make sure is ABOVE /:id or it WON'T work.
 */
 
+movieRouter.post('/add', postAddMovie);
+movieRouter.get('/add', getAddMovie);
 movieRouter.get("/:id", movieDetail);
 
 export default movieRouter;
