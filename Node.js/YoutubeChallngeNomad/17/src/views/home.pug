@@ -1,0 +1,6 @@
+include templates/layout
+
+ul
+  each data in movies
+    li
+      a(href=`/${data._id}`)= data.title

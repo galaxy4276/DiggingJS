@@ -1,0 +1,15 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= siteTitle
+  body 
+    h1 Editing #{movie.title}!!!
+    form(action=`/${movie._id}/edit` method="post")
+      input(name="title" placeholder="Title" value=movie.title) 
+      input(name="year" placeholder="Year" value=movie.year) 
+      input(name="rating" placeholder="Rating" value=movie.rating) 
+      textarea(name="synopsis" placeholder="Synopsis" rows="5")= movie.synopsis
+      input(name="genres" placeholder="Genres" value=genres)
+      button(type="submit") Submit
+    a(href=`/${movie._id}/delete`) Delete Movie

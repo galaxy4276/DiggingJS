@@ -1,0 +1,9 @@
+include templates/layout
+body  
+  h1= movie.title
+  p= movie.synopsis
+  p rating 10/#{movie.rating}
+  ul
+    each data in genres
+      li= data
+  a(href=`/${movie._id}/edit`) Edit
