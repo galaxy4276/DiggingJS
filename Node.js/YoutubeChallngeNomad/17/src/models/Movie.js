@@ -7,17 +7,41 @@ SO YOU CAN SEARCH / ADD / EDIT / DELETE YOUR DOCUMENTS ONLY.
 PLEASE FOLLOW THIS STEP
 WE NEED TO SHARE THE SAME DB SO NICO CAN CHECK OUT EVERYBODYS PROJECT.
 */
-const YOUR_USERNAME = null;
+const YOUR_USERNAME = 'galaxyhi4276';
 
 const MovieSchema = mongoose.Schema({
   // HERE YOU HAVE TO CREATE AND COMPLETE THE MOVIE SCHEMA
+  title: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+  rating: {
+    type: Number,
+    required: true,
+  },
+  synopsis: {
+    type: String,
+    required: true,
+  },
+  genres: {
+    type: Array,
+    required: true,
+  },
+  uploadedAt: {
+    type: Date,
+    default: Date.now(),
+  }
 });
 
 if (YOUR_USERNAME === null || typeof YOUR_USERNAME !== "string") {
   /*
   PLEASE ADD YOUR USERNAME ON THE LINE 10
   THIS LINE WILL REMIND YOU IF YOU HAVEN'T ADDED IT
-  PLEASE DONT REMOVE THIS LINE
+  PLEASE DONT REMOVE THIS LINErs
   */
   throw Error(
     "❌  Please add your username in the line 10 of models/Movie.js  ❌"
