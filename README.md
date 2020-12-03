@@ -33,7 +33,7 @@
 
 ## Nomad Coaders Youtube Challenge
 
-![challenge_youtube](./img/youtube.png)
+![challenge_youtube](./img/youtube.PNG)
 
 #### 인상 깊은 점
 
