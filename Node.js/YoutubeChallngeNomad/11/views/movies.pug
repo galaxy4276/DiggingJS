@@ -1,0 +1,8 @@
+html
+  meta(charset="utf8")
+  title yts Movie
+body
+  h1 Movies!
+  each movie in movies
+    h3
+      a(href=`/${movie.id}`)= movie.title
