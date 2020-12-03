@@ -18,15 +18,21 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var Person_1 = __importDefault(require("./person/Person"));
-var chance_1 = __importDefault(require("chance"));
-var R = __importStar(require("ramda"));
-var chance = new chance_1.default();
-var person = R.range(0, 2)
-    .map(function (n) { return new Person_1.default(chance.name(), chance.age()); });
-console.log(person);
-//# sourceMappingURL=index.js.map
+exports.makePerson = void 0;
+var U = __importStar(require("../utils/makeRandomNumber"));
+var Person = /** @class */ (function () {
+    function Person(name, age) {
+        if (age === void 0) { age = U.makeRandomNumber(); }
+        this.name = name;
+        this.age = age;
+    }
+    return Person;
+}());
+exports.default = Person;
+var makePerson = function (name, age) {
+    if (age === void 0) { age = U.makeRandomNumber(); }
+    return ({ name: name, age: age });
+};
+exports.makePerson = makePerson;
+//# sourceMappingURL=Person.js.map

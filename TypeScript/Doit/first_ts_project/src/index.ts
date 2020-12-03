@@ -1,12 +1,10 @@
-import { makeRandomNumber } from './utils/makeRandomNumber';
 import IPerson from './person/IPerson';
-import { makePerson } from './person/Person';
+import Person from './person/Person';
+import Chance from 'chance';
+import * as R from 'ramda';
 
-const testMakePerson = (): void => {
-  let eungi: IPerson = makePerson('eungi')
-  let hungi: IPerson = makePerson('hungi')
-  console.log(eungi, hungi);
-}
+const chance = new Chance();
 
-
-testMakePerson();
+let person: IPerson[] = R.range(0, 2)
+              .map((n: number) => new Person(chance.name(), chance.age()))
+console.log(person);
