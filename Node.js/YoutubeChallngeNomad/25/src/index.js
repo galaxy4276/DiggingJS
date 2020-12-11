@@ -10,7 +10,11 @@ app.get('/', (req, res, next) => {
 
   if (urls) {
     request.get(`http://${urls}`, (err, response) => {
-      if (!(response?.statusCode)) {
+      if (!response.statusCode) {
+        return res.send('down');
+      }
+
+      if (response.statusCode === 404) {
         return res.send('down');
       }
 
