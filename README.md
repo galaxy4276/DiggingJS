@@ -35,9 +35,8 @@
 
 ![challenge_youtube](./img/youtube.PNG)
 
-#### 인상 깊은 점
-
-- 너무 비쌌다. ( 약 2x만원 )
+### 진행률
+- Day 31에서 하차 ( 총 33 )
 
 ## Doit 타입스크립트
 
