@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+  }
+}
